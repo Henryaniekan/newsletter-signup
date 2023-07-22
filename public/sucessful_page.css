@@ -1,0 +1,28 @@
+body{
+background: linear-gradient(to right, white, white, #aab6c9);
+}
+
+.fcontainer {
+display: block;
+width: 50%;
+text-align: center;
+margin: 0 auto;
+margin-top: 10%;
+font-size: 1rem;
+}
+
+.bi-envelope-check-fill {
+fill :#0d6efd;
+}
+
+.heading {
+    font-size: 5rem;
+    line-height: 2;
+    transform: scale(0.8);
+    transition: transform 2s ease-out;
+
+}
+
+.bi-bell-fill {
+    fill :black; 
+}
