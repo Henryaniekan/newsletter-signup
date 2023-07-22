@@ -35,7 +35,7 @@ app.post("/", function (req, res) {
     method : "POST",
     auth: {
       user: "any",
-      pass: KEY,
+      pass: `${KEY}`,
     },
     headers: {
       "Content-Type": "application/json",
