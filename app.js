@@ -1,8 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const bodyparser = require("body-parser");
 const request = require("request");
 const app = express();
-const KEY = process.env.MAIL_CHIMP_KEY
+const KEY = process.env.MAIL_CHIMP_KEY;
 app.use(express.static("public"));
 app.use(bodyparser.urlencoded({ extended: true }));
 
@@ -32,7 +33,7 @@ app.post("/", function (req, res) {
   const jsonData = JSON.stringify(data);
   const url = "https://us21.api.mailchimp.com/3.0/lists/028eeecb1e";
   const options = {
-    method : "POST",
+    method: "POST",
     auth: {
       user: "any",
       pass: `${KEY}`,
